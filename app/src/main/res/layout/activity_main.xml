@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/androidparty"/>
@@ -14,19 +15,19 @@
         android:textSize="36sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Happy Birthday, Ben"
+        android:text="@string/happy_birthday_ben"
         android:textColor="@android:color/white"
         android:fontFamily="sans-serif-light"/>
+
     <TextView
-        android:textSize="36sp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-light"
         android:text="From, Nicholas"
         android:textColor="@android:color/white"
-
-        android:fontFamily="sans-serif-light"/>
+        android:textSize="36sp" />
 
 
 </RelativeLayout>
